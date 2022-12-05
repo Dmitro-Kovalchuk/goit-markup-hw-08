@@ -1,0 +1,29 @@
+.socials__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: fill var(--duration) var(--timing-function),
+    background-color var(--duration) var(--timing-function);
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--attention-color);
+  fill: var(--hat-color);
+}
+
+.socials__item {
+  width: 44px;
+  height: 44px;
+}

@@ -1,0 +1,51 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--background-section);
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    font-family: "Raleway";
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 20px;
+    color: var(--attention-color);
+  }
+
+  &-item {
+    margin-bottom: 9px;
+  }
+
+  &-item:last-child {
+    margin-bottom: 0;
+  }
+
+  &-address {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--hat-color);
+  }
+
+  &-contacts {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--duration) var(--timing-function);
+  }
+}
+
+.logo--footer {
+  color: var(--hat-color);
+}
+
+.nav__link:hover,
+.nav__link:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--attention-color);
+}

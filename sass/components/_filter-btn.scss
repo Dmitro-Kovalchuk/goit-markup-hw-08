@@ -1,0 +1,57 @@
+.filter-btn-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+  padding: 0;
+}
+
+.filter-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  padding: 6px 22px;
+  color: var(--text-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-color: transparent;
+  transition-property: border-color, color, box-shadow;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--timing-function);
+}
+
+.filter-btn.active {
+  background-color: var(--attention-color);
+  color: var(--hat-color);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--attention-color);
+  color: var(--hat-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-title {
+  padding: 20px 24px 0 24px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.filter-info {
+  padding: 0px 24px 20px 24px;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.03em;
+
+  color: var(--feature-color);
+}
