@@ -60,6 +60,20 @@ address {
   font-style: normal;
 }
 
+.card-set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-set__item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+}
+
 .btn {
   font-weight: 700;
   font-size: 16px;
@@ -655,11 +669,19 @@ address {
 .about {
   padding-bottom: 0;
 }
-.about-list {
+.about-list .card-set {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
 }
 .about-container {
   display: -webkit-box;
@@ -682,15 +704,21 @@ address {
     width: 450px;
   }
 }
+@media screen and (min-width: 768px) {
+  .about-container {
+    width: 738px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about-container {
     width: 270px;
   }
-}
-.about-item {
-  width: 270px;
+  .about-container-item {
+    width: 270px;
+  }
 }
 .about-title {
+  text-align: center;
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 16px;

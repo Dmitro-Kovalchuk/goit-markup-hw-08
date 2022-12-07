@@ -1,9 +1,16 @@
 .about {
   padding-bottom: 0;
 
-  &-list {
+  &-list .card-set {
     display: flex;
     gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &-list {
+      display: flex;
+      gap: 30px;
+    }
   }
 
   &-container {
@@ -19,17 +26,21 @@
     @media screen and (min-width: 480px) {
       width: 450px;
     }
+    @media screen and (min-width: 768px) {
+      width: 738px;
+    }
 
     @media screen and (min-width: 1200px) {
       width: 270px;
+
+      &-item {
+        width: 270px;
+      }
     }
   }
 
-  &-item {
-    width: 270px;
-  }
-
   &-title {
+    text-align: center;
     font-size: 14px;
     margin-bottom: 10px;
     line-height: 16px;
