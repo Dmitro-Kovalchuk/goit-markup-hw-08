@@ -89,9 +89,25 @@ address {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -184,7 +200,20 @@ address {
 }
 
 .section {
-  padding: 94px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-widh: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-widh: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .backdrop {
@@ -647,6 +676,16 @@ address {
           align-items: center;
   border-radius: 4px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 480px) {
+  .about-container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-container {
+    width: 270px;
+  }
 }
 .about-item {
   width: 270px;
