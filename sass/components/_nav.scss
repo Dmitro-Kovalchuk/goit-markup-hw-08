@@ -15,9 +15,10 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // gap: 50px;
   }
 
   &__link.current::after,
@@ -51,9 +52,10 @@
   }
 
   &__contacts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    display: none;
+    // display: flex;
+    // align-items: center;
+    // gap: 50px;
   }
 
   &__contact__icons {

@@ -25,7 +25,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-
   }
 
   &-link {
@@ -85,14 +84,21 @@
     justify-content: center;
 
     @media screen and (min-width: 1200px) {
-      // display: block;
       width: 358px;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: inherit;
     }
   }
 }
 
 .send-btn {
-  width: 200px;
+  height: 50px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +109,5 @@
   @media screen and (min-width: 1200px) {
     margin: 0;
     margin-left: 12px;
-    
   }
 }
