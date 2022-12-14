@@ -6,6 +6,11 @@
   margin-right: 93px;
   color: var(--attention-color);
   padding: 16px 0;
+
+  @media (min-width: 780px) {
+    padding: 26px 0;
+    margin-right: 87px;
+  }
 }
 
 .logo--header {

@@ -134,6 +134,12 @@ address {
   color: var(--attention-color);
   padding: 16px 0;
 }
+@media (min-width: 780px) {
+  .logo {
+    padding: 26px 0;
+    margin-right: 87px;
+  }
+}
 
 .logo--header {
   color: #000000;
@@ -161,6 +167,17 @@ address {
 }
 .nav__list {
   display: none;
+}
+@media screen and (min-width: 780px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
+  }
 }
 .nav__link.current::after, .nav__link.current::after {
   content: "";
@@ -190,6 +207,32 @@ address {
 }
 .nav__contacts {
   display: none;
+}
+@media screen and (min-width: 780px) {
+  .nav__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__contacts {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .nav__contact__icons {
   fill: currentColor;
@@ -649,40 +692,6 @@ address {
   color: var(--feature-color);
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1.5;
-  color: #212121;
-  background-color: #fff;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-header {
-  -webkit-box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-
-.page-header .container {
-  min-height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,7 +701,7 @@ body {
   list-style: none;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 780px) {
   .menu {
     display: none;
   }
@@ -729,7 +738,7 @@ body {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 780px) {
   .menu-toggle {
     display: none;
   }
@@ -743,6 +752,13 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
   padding: 32px;
@@ -772,6 +788,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -779,6 +796,13 @@ body {
   padding: 10px;
   color: #fff;
   text-decoration: none;
+}
+
+.mobile-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 
 .header {
@@ -809,6 +833,12 @@ body {
   color: var(--feature-color);
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
+}
+@media screen and (min-width: 780px) {
+  .header__contacts {
+    padding: 0;
+    gap: 10px;
+  }
 }
 
 .hero {
