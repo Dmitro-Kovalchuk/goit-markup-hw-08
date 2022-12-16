@@ -286,12 +286,17 @@ address {
   padding: 40px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 528px;
+  width: 450px;
   min-height: 581px;
   background-color: var(--hat-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 .modal-label {
   display: block;
@@ -299,9 +304,14 @@ address {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-label {
+    line-height: 23px;
+  }
 }
 .modal-form-group {
   margin-bottom: 20px;
@@ -400,9 +410,15 @@ address {
   fill: var(--attention-color);
 }
 .modal-form-agreement-desc {
-  line-height: 1.71;
   letter-spacing: 0.03em;
+  font-size: 12px;
+  line-height: 14px;
   color: var(--feature-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    line-height: 1.71;
+  }
 }
 .modal-form-checkbox {
   -webkit-appearance: none;
@@ -761,8 +777,10 @@ address {
           flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
-  background-color: #3f51b5;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  background-color: var(--hat-color);
   z-index: 999;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
@@ -779,9 +797,9 @@ address {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+  top: 10px;
+  right: 15px;
+  color: var(--text-color);
 }
 
 .mobile-menu {
@@ -793,9 +811,42 @@ address {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
-  color: #fff;
+  padding-bottom: 32px;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+.mobile-menu .active:hover,
+.mobile-menu .active:focus {
+  color: var(--attention-color);
+}
+
+.mobile-menu .active {
+  color: var(--attention-color);
+}
+
+.mobile-contacts-link-phone {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  color: var(--attention-color);
+}
+
+.mobile-contacts-link-email {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  padding-bottom: 64px;
+  color: var(--feature-color);
 }
 
 .mobile-socials {
@@ -803,6 +854,11 @@ address {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--attention-color);
 }
 
 .header {
@@ -849,14 +905,22 @@ address {
 .hero__title {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
   color: var(--hat-color);
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero__container {
   max-width: 1600px;
@@ -951,6 +1015,11 @@ address {
   color: var(--feature-color);
 }
 
+@media screen and (max-width: 1199.97px) {
+  .activity {
+    display: none;
+  }
+}
 .activity__title {
   margin-bottom: 50px;
   font-size: 36px;
