@@ -132,7 +132,7 @@ address {
   color: var(--attention-color);
   padding: 16px 0;
 }
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .logo {
     padding: 26px 0;
     margin-right: 87px;
@@ -166,7 +166,7 @@ address {
 .nav__list {
   display: none;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -185,7 +185,7 @@ address {
   height: 4px;
   background-color: var(--attention-color);
   border-radius: 2px;
-  bottom: 0;
+  bottom: -3px;
 }
 .nav__link::after {
   content: "";
@@ -206,7 +206,7 @@ address {
 .nav__contacts {
   display: none;
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .nav__contacts {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -489,8 +489,12 @@ address {
 }
 
 .join {
-  margin-top: 10px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .join {
+    margin: 0;
+  }
 }
 .join-title {
   display: -webkit-box;
@@ -553,6 +557,11 @@ address {
 }
 .join-email {
   margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .join-email {
+    margin-top: 0;
+  }
 }
 .join-email-title {
   display: -webkit-box;
@@ -715,7 +724,7 @@ address {
   list-style: none;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .menu {
     display: none;
   }
@@ -752,7 +761,7 @@ address {
   outline: none;
 }
 
-@media (min-width: 780px) {
+@media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
@@ -888,7 +897,7 @@ address {
   -webkit-transition: color var(--duration) var(--timing-function);
   transition: color var(--duration) var(--timing-function);
 }
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
   .header__contacts {
     padding: 0;
     gap: 10px;
@@ -897,8 +906,13 @@ address {
 
 .hero {
   background-color: var(--background-section);
-  padding: 200px 0;
+  padding: 118px 0;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
 }
 .hero__title {
   margin-bottom: 30px;
@@ -922,7 +936,7 @@ address {
 }
 .hero__container {
   max-width: 1600px;
-  height: 600px;
+  height: 480px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -949,22 +963,19 @@ address {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_md@2x.jpg);
   }
 }
-@media screen and (min-width: 781px) {
+@media screen and (min-width: 769px) {
   .hero__container {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/img_lg@x.jpg);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/img_lg@x.jpg);
   }
 }
-@media screen and (min-width: 781px) and (min-device-pixel-ratio: 2), screen and (min-width: 781px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 781px) and (min-resolution: 192dpi), screen and (min-width: 781px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .hero__container {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/img_lg@2x.jpg);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/img_lg@2x.jpg);
   }
 }
 
-.about {
-  padding-bottom: 0;
-}
 .about-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1008,7 +1019,6 @@ address {
 @media screen and (min-width: 768px) {
   .about-container {
     width: 354px;
-    margin-top: 30px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1258,6 +1268,14 @@ address {
     display: block;
   }
 }
+.footer-mail {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-mail {
+    margin-bottom: 0;
+  }
+}
 .footer-item {
   margin-bottom: 9px;
 }
@@ -1287,8 +1305,27 @@ address {
     display: block;
   }
 }
-.footer-mail {
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-join {
+    margin-bottom: 0;
+    gap: 70px;
+  }
 }
 
 .logo--footer {
