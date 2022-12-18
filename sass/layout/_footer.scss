@@ -32,21 +32,16 @@
   &-nav__list {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (min-width: 1200px) {
       display: block;
     }
   }
 
-  &-mail {
-    margin-bottom: 60px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
-  }
-
   &-item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 
   &-item:last-child {
@@ -77,17 +72,22 @@
   }
 }
 
+.address {
+  margin-bottom: 60px;
+}
+
 .address-join {
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+
     display: flex;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
 
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0;
-      gap: 70px;
-    }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    gap: 70px;
+  }
 }
 
 .logo--footer {
