@@ -5,6 +5,11 @@
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .client__list {
@@ -15,9 +20,12 @@
 }
 
 .client__item {
-  width: 210px;
   height: 92px;
-  
+
+  @media screen and (min-width: 480px) {
+    width: 210px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 170px;
   }

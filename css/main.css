@@ -211,9 +211,6 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -248,13 +245,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-widh: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-widh: 1200px) {
+@media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -284,12 +275,17 @@ address {
   padding: 40px;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 450px;
+  width: 95%;
   min-height: 581px;
   background-color: var(--hat-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -558,9 +554,29 @@ address {
 .join-email {
   margin-top: 10px;
 }
+@media screen and (min-width: 768px) {
+  .join-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .join-email {
     margin-top: 0;
+    display: block;
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
   }
 }
 .join-email-title {
@@ -602,6 +618,11 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .join-field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .join-field {
@@ -860,12 +881,17 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--attention-color);
+}
+
+.mobile-socials-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
 }
 
 .header {
@@ -918,7 +944,6 @@ address {
   margin-bottom: 30px;
   font-weight: 900;
   letter-spacing: 0.06em;
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -926,6 +951,11 @@ address {
   font-size: 26px;
   line-height: 1.62;
   text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -936,7 +966,6 @@ address {
 }
 .hero__container {
   max-width: 1600px;
-  height: 480px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -1058,6 +1087,10 @@ address {
     display: none;
   }
 }
+.activity.section {
+  padding-top: 0;
+}
+
 .activity__title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -1106,6 +1139,12 @@ address {
   letter-spacing: 0.03em;
   color: var(--text-color);
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 .team__list {
   gap: 30px;
@@ -1158,6 +1197,12 @@ address {
   color: var(--text-color);
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .client--title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}
 
 .client__list {
   display: -webkit-box;
@@ -1173,8 +1218,12 @@ address {
 }
 
 .client__item {
-  width: 210px;
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .client__item {
+    width: 210px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .client__item {

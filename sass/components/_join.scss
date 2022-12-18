@@ -56,8 +56,17 @@
   &-email {
     margin-top: 10px;
 
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+
     @media screen and (min-width: 1200px) {
       margin-top: 0;
+      display: block;
+      flex-direction: unset;
     }
   }
 
@@ -90,10 +99,15 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
       width: 358px;
     }
   }
+
   &-form {
     display: flex;
     flex-direction: column;

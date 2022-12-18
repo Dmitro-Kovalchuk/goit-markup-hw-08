@@ -34,7 +34,6 @@
     background-color: var(--attention-color);
     border-radius: 2px;
     bottom: -3px;
-
   }
 
   &__link::after {
@@ -60,7 +59,6 @@
 
     @media screen and (min-width: 768px) {
       display: flex;
-      align-items: center;
       flex-direction: column;
       gap: 10px;
     }
