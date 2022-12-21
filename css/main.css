@@ -1382,6 +1382,11 @@ address {
 .address {
   margin-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .address-join {
